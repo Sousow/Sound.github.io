@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="survey.css" />
+    <body>
+      <h1 id="title">freeCodeCamp survey form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+      <form method="post" id="survey-form" action="https://survey-form.freecodecamp.rocks/">
+        <fieldset>
+          <label for="name" id="name-label">Name<input id="name" name="name" type="text" placeholder="Enter Your Name" class="white" required/></label>
+          <label for="email" id="email-label">Email<input id="email" name="email" type="email" placeholder="Enter Your email" class="white" required/></label>
+          <label for="number" id="number-label">Age <small>(optional)</small><input id="number" name="age" type="number" placeholder="Age" class="white" min="18" max="80" required/></label>
+          </fieldset>
+          <fieldset>
+            <label>Would You recommend freeCodecamp to a friend?</label>
+          <fieldset id="group2" type="radio">
+        <input group="group2"type="radio" value="Definitely" class="inline" name="group2" checked>Definitely<br>
+        <input type="radio" group="group2" value="Maybe" name="group2" class="inline">Maybe<br>
+        <input type="radio" group="group2"value="Not Sure" name="group2" class="inline">Not sure<br>
+    </fieldset>
+              </fieldset>
+          <fieldset>
+          <label for="role">Which option best describes your current role?
+            <select id="dropdown" name="role"/>
+            <option value="select">Select Current Role</option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time learner</option>
+            <option value="Prefer Not to say">Prefer Not to say</option>
+            <option value="Other">Other</option>
+            </select>
+            </label>
+            </fieldset>
+            <fieldset>
+              <label>
+                What would You like to see improved? <small>(Check all that apply)</small></label>
+              <label for="inp1"> <input type="checkbox" value="Front-end" name="inp1" class="inline"></input>Front-end Projects</label>
+              <label for="inp2"><input type="checkbox" name="inp2" value="Back-end" class="inline">Back-end projects</input></label>
+              <label for="inp3"><input type="checkbox" name="inp3" value="Data Visualisation" class="inline">Data Visualisation</input></label>
+              <label for="inp4"><input type="checkbox" name="inp4" value="Challenges" class="inline">Challenges</input></label>
+              <label for="inp5"><input type="checkbox" value="Open Source"  name="inp5" class="inline">Open Source Community</input></label>
+              <label for="inp6"><input type="checkbox" name="inp6"value="Git Help Rooms"  class="inline">Git Help Rooms</input></label>
+              <label for="inp7"><input type="checkbox" name="inp7" value="Videos" class="inline">Videos</input></label>
+              <label for="inp8"><input type="checkbox" name="inp8" value="City Meetups"  class="inline">City Meetups</input></label>
+              <label for="inp9"><input type="checkbox" name="inp9" value="Wiki"  class="inline">Wiki</input></label>
+              <label for="inp10"><input type="checkbox" name="inp10" value="Forum"  class="inline">Forum</input></label>
+              <label for="inp11"><input type="checkbox" name="inp11" value="Additional Courses" class="inline">Additional Courses</input></label>
+              </fieldset>
+              <fieldset>
+<label for="comment">Any Comments or Suggestions</label>
+<textarea name="comment" id="comment" placeHolder="Enter your comment here" class="white"></textarea>
+</fieldset>
+<input id="submit" type="submit" value="Submit" />
+
+</form>
+</body>
+</html>
+
+      
